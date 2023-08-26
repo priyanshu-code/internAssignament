@@ -35,7 +35,7 @@ const prof = [
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 space-y-40">
-      <div>
+      <div className="flex flex-col items-center">
         <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-600 to-purple-800 px-10">
           Learn from Scientists,research scholars from the top institutes of the world.
         </h1>
@@ -52,8 +52,8 @@ export default function Home() {
           })}
         </div>
       </div>
-      <div>
-        <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-600 to-purple-800">
+      <div className="flex flex-col items-center">
+        <h1 className="self-start text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-600 to-purple-800">
           Meet your mentors
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  max-w-[80vw] gap-10 py-10">
@@ -77,11 +77,11 @@ export default function Home() {
           })}
         </div>
       </div>
-      <div>
+      <div className="flex flex-col items-center">
         <h1 className="text-4xl self-start font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-600 to-purple-800">
           Mentor & Advisor
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3  max-w-[80vw] gap-10 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 max-w-[80vw] gap-10 py-10">
           <div className="flex flex-col text-center border border-1 items-center justify-evenly p-8 space-y-2 shadow-xl rounded-[3rem]">
             <Image
               src={omkar}
